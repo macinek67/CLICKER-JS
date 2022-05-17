@@ -1,0 +1,65 @@
+<html>
+    <heead>
+        <title>MARCIN GAWRON 2PTP</title>
+        <link rel="stylesheet" href="styles.css">
+    </heead>
+    <body style="margin: 0px;">
+        <div id="leftPanel">
+            <p id="headers">OSIAGNIECIA<hr></p>
+            <div id="achievementV1" class="achievement">
+                <p id="achievementv1Title" style="color: white; text-shadow: 2px 2px gold;">KLIKNIJ 100 RAZY</p>
+                <input type="button" value="0/100" id="achievementProgresV1">
+            </div>
+            <div id="achievementV2" class="achievement" style="top: 29.5%;">
+                <p id="achievementv2Title" style="color: white; text-shadow: 2px 2px gold; font-size: 24px; margin-left: 25px;">ZBIERZ 300 Z ZEGARU</p>
+                <input type="button" value="0/300" id="achievementProgresV2">
+            </div>
+            <div id="achievementV3" class="achievement" style="top: 43.5%;">
+                <p id="achievementv3Title" style="color: white; text-shadow: 2px 2px gold; font-size: 22px; margin-left: 30px;">KUP 10 PRZEDMIOTOW</p>
+                <input type="button" value="0/10" id="achievementProgresV3">
+            </div>
+            <div id="achievementV4" class="achievement" style="top: 57.5%;">
+                <p id="achievementv4Title" style="color: white; text-shadow: 2px 2px gold; font-size: 22px; margin-left: 20px;">GRAJ CIĄGIEM 10 MINUT</p>
+                <input type="button" value="0/10" id="achievementProgresV4">
+            </div>
+        </div>
+        <div id="rightPanel">
+            <p id="headers">SKLEP<hr></p>
+            <div id="clickX2v1" class="upgrade">
+                <img src="image.png" class="upgradeIcon">
+                <p id="clickX2v1Title" style="color: white; text-shadow: 2px 2px gold;">DOUBLE CLICK</p>
+                <input type="button" value="ZAKUP" id="buyButton">
+            </div>
+            <div id="clickX2v2" class="upgrade" style="top: 29.5%;">
+                <img src="image (2).png" class="upgradeIcon">
+                <p id="cashTimerClassicTitle" style="color: white; text-shadow: 2px 2px gold; margin-left: 117px;">ZEGAREK KASY</p>
+                <input type="button" value="ZAKUP" id="buyButton1">
+            </div>
+            <div id="clickX2v3" class="upgrade" style="top: 44%;">
+                <img src="image (3).png" class="upgradeIcon">
+                <p id="cashTimerX2Title" style="color: white; text-shadow: 2px 2px gold; margin-left: 135px;">ZEGAREK x2</p>
+                <input type="button" value="ZAKUP" id="buyButton2">
+            </div>
+            <div id="clickX2v4" class="upgrade" style="top: 58.5%;">
+                <img src="image (4).png" class="upgradeIcon">
+                <p id="cashGlobalX2_5MinutesTitle" style="color: white; text-shadow: 2px 2px gold; margin-left: 140px;">x2 na 5 MIN</p>
+                <input type="button" value="ZAKUP" id="buyButton3">
+            </div>
+        </div>
+        <div id="middlePanel">
+            <p id="headers">
+                WYNIK:
+                <strong id="score" style="color: white; text-shadow: 2px 2px gold;">0$</strong>
+                <hr>
+            </p>
+            <div id="clicker" onclick="clickerClicked()"></div>
+            <p>
+                <hr style="margin-top: 675px;">
+                <strong id="timePlayedPanel" style="margin-left: 125px;">CZAS GRY: </strong>
+                <strong id="timePlayed" style="color: white; text-shadow: 2px 2px gold;">00:00:00</strong>
+            </p>
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

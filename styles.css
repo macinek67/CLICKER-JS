@@ -1,0 +1,231 @@
+body
+{
+    animation: backgroundGradient 20s infinite;
+}
+
+@keyframes backgroundGradient
+{
+    0% {background-image: linear-gradient(to right top, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    12.5% {background-image: linear-gradient(to right, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    25% {background-image: linear-gradient(to right bottom, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    37.5% {background-image: linear-gradient(to bottom, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    50% {background-image: linear-gradient(to left bottom, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    62.5% {background-image: linear-gradient(to left, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    75% {background-image: linear-gradient(to left top, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    87.5% {background-image: linear-gradient(to top, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+    100% {background-image: linear-gradient(to right top, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);}
+}
+
+#leftPanel
+{
+    height: 900px;
+    width: 450px;
+    background-color: transparent;
+    margin-left: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 5px solid rgba(255, 255, 255, 0.36);
+    border-radius: 10px;
+    margin-top: 27.5px;
+}
+
+#middlePanel
+{
+    margin: 0;
+    position: absolute;
+    top: 27.5px;
+    left: 960px;
+    transform: translate(-50%, -0%);
+    width: 900px;
+    height: 900px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 5px solid rgba(255, 255, 255, 0.36);
+    border-radius: 10px;
+}
+
+#rightPanel
+{
+    height: 900px;
+    width: 450px;
+    background-color: transparent;
+    margin-top: -907.5px;
+    margin-left: 1440px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(9px);
+    -webkit-backdrop-filter: blur(9px);
+    border: 5px solid rgba(255, 255, 255, 0.36);
+    border-radius: 10px;
+}
+
+#headers
+{
+    text-align: center;
+    padding-top: 20px;
+    color: gold; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 58px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+}
+
+hr
+{
+    border: 3px solid rgba(255, 255, 255, 0.36);
+}
+
+#timePlayedPanel, #timePlayed
+{
+    text-align: center;
+    color: gold; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 58px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+}
+
+#score
+{
+    color: gold; 
+    font-family: 'Raleway',sans-serif; 
+    font-size: 58px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+}
+
+#clicker
+{
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 300px;
+    background-image: radial-gradient(circle, #ffdd00, #ffcf00, #ffc100, #ffb400, #ffa600);
+    box-shadow:  0px 0px 5px rgb(255, 153, 0);
+    border-radius: 10px;
+    animation: clickerSize 5s infinite;
+}
+
+@keyframes clickerSize
+{
+    0% {transform:rotate(0deg);}
+    25% {transform:rotate(180deg);}
+    50% {transform:rotate(240deg);}
+    75% {transform:rotate(300deg);}
+    100% {transform:rotate(360deg);}
+}
+
+.upgrade
+{
+    border: 5px solid rgba(255, 255, 255, 0.36);
+    background-color: transparent;
+    width: 350px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+.upgradeIcon
+{
+    width: 100px;
+    height: 100px;
+    border-right: 5px solid rgba(255, 255, 255, 0.36);
+}
+
+#clickX2v1Title, #cashTimerClassicTitle, #cashTimerX2Title, #cashGlobalX2_5MinutesTitle
+{
+    font-family: 'Raleway',sans-serif; 
+    font-size: 25px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+    margin-top: -115px;
+    margin-left: 120px;
+}
+
+#buyButton, #buyButton1, #buyButton2, #buyButton3
+{
+    margin-top: -35px;
+    margin-left: 115px;
+    width: 225px;
+    height: 40px;
+    border: 2px solid rgb(255, 153, 0);
+    background-color: gold;
+    color: white;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+    font-family: 'Raleway',sans-serif; 
+    font-size: 23px; 
+    font-weight: 800; 
+    text-transform: uppercase;
+    transition: box-shadow 0.5s;
+}
+
+#buyButton:hover, #buyButton1:hover, #buyButton2:hover, #buyButton3:hover
+{
+    box-shadow: 0 0px 32px 0 rgb(255, 166, 0);
+}
+
+.achievement
+{
+    border: 5px solid rgba(255, 255, 255, 0.36);
+    background-color: transparent;
+    width: 350px;
+    height: 100px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+#achievementv1Title, #achievementv2Title, #achievementv3Title, #achievementv4Title
+{
+    font-family: 'Raleway',sans-serif; 
+    font-size: 25px; 
+    font-weight: 800; 
+    line-height: 72px; 
+    margin: 0 0 24px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+    margin-top: -14.5px;
+    margin-left: 40px;
+}
+
+#achievementProgresV1, #achievementProgresV2, #achievementProgresV3, #achievementProgresV4
+{
+    margin-top: -35px;
+    width: 95%;
+    margin-left: 2.5%;
+    height: 40px;
+    border: 3px solid gold;
+    box-shadow: 2px 2px rgb(253, 164, 29);
+    background-color: gold repeat-y;
+    color: white;
+    text-shadow: 2px 2px rgb(253, 164, 29);
+    font-family: 'Raleway',sans-serif; 
+    font-size: 23px; 
+    font-weight: 800; 
+    text-transform: uppercase;
+    transition: box-shadow 0.5s;
+    background-size: 50% auto;
+    background: linear-gradient(to left, transparent 100%, #ff0000 0%);
+}
